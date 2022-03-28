@@ -1,0 +1,76 @@
+.menu {
+  display: grid;
+  font-size: 25px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows:repeat(2, 1fr);
+  padding: 20px;
+  text-align: center;
+  font-family: 'Song Myung', serif;
+}
+.menu div {
+  border: 1px gray solid;
+}
+.photo {
+  display:block;
+  text-align: center;
+}
+.photo div {
+  padding-top: 20px;
+  padding-bottom:20px;
+}
+.map {
+  text-align: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
+.main-font {
+  font-family: 'Song Myung', serif;
+}
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+}
+h1 {
+  text-align: center;
+  font-size: 45px;
+  margin-top:15px;
+  border-bottom: 5px gray solid;}
+h2 {
+  font-size: 35px;
+  margin-left: 20px;
+}
+li {
+  font-size: 25px;
+  display: inline;
+}
+p {
+  font-family: 'Song Myung', serif;
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+@media screen and (min-width:600px) and (max-width:800px) {
+  .menu {
+    display: grid;
+    font-size: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:repeat(3, 1fr);
+    padding: 20px;
+    text-align: center;
+    font-family: 'Song Myung', serif;
+  }
+}
+@media screen and (min-width:0px) and (max-width:600px) {
+  .menu {
+    display: grid;
+    font-size: 25px;
+    grid-template-columns: 1fr;
+    grid-template-rows:repeat(6, 1fr);
+    padding: 20px;
+    text-align: center;
+    font-family: 'Song Myung', serif;
+  }
+  .menu div {
+    border: none;
+    margin-bottom: 20px;
+  }
+}
